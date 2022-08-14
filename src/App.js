@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import List from './components/List';
+import { useState } from 'react';
 
 function App() {
+  const [nav, setNav] = useState('home');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <img className='logo' src='https://uxwing.com/wp-content/themes/uxwing/download/sport-and-awards/quiz-icon.png' alt='logo'/>
+        <button onClick={() => setNav('home')}>Home</button>
+        <button onClick={() => setNav('list')}>List</button>
+      </nav>
+      <section>
+        {nav === 'home' && <Home />}
+        {nav === 'list' && <List />}
+      </section>
     </div>
   );
 }
