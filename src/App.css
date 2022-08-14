@@ -32,15 +32,10 @@ body {
   border: hidden;
   background: none;
   font-size: 20px;
-  /* margin-right: 40px; */
   cursor: pointer;
   position: relative;
   z-index: 1;
 } 
-
-/* .navbtn:hover {
-  background-color: red;
-} */
 
 .navbtn:before {
   transition: 1s;

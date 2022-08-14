@@ -1,0 +1,21 @@
+/* Global Selectors */
+article img {
+  width: auto;
+}
+
+/* Class */
+.carousel {
+   margin: 5px; 
+   padding: 10px;
+   border-radius: 50%;
+}
+
+.carousel:hover {
+  background-color: aliceblue;
+}
+
+/* .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
