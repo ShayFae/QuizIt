@@ -5,17 +5,23 @@ article img {
 
 /* Class */
 .carousel {
-   margin: 5px; 
-   padding: 10px;
-   border-radius: 50%;
+  margin-left: 50px; 
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #9090C0;
 }
 
 .carousel:hover {
   background-color: aliceblue;
 }
 
-/* .home {
+.carousel-section {
+  display: flex;
+  justify-content: center;
+}
+
+.home {
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
+}
