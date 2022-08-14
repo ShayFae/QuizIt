@@ -8,7 +8,7 @@ export default function Home() {
   return(
       <div>
         <h1 className='home'>Welcome to Quiz It</h1>
-        <section className='test'>
+        <section className='carousel-section'>
           <button className='carousel' onClick={() => setCarousel('one')}></button>
           <button className='carousel' onClick={() => setCarousel('two')}></button>
           <button className='carousel' onClick={() => setCarousel('three')}></button>
