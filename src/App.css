@@ -1,18 +1,13 @@
 /* GLOBAL SELECTORS */
 nav {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
+  background-color: #9090C0;
 }
 
-button {
-  padding: 20px;
-  margin: 10px;
-  border: hidden;
-  background: none;
-  font-size: 20px;
-  margin-right: 40px;
-} 
+.App {
+  margin-top: 0;
+  padding: 0;
+}
 
 section {
   margin-top: 50px;
@@ -20,9 +15,49 @@ section {
   justify-content: center;
 }
 
+body {
+  margin: 0;
+}
+
 /* CLASS */
 .logo {
   width: 5%;
   margin-right: auto !important;
   margin-left: 20px;
+  padding: 10px;
+}
+
+.navbtn {
+  padding: 50px;
+  border: hidden;
+  background: none;
+  font-size: 20px;
+  /* margin-right: 40px; */
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+} 
+
+/* .navbtn:hover {
+  background-color: red;
+} */
+
+.navbtn:before {
+  transition: 1s;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  right: 100%;
+  bottom: 0;
+  opacity: 50%;
+  content: "";
+  background-color: aliceblue;
+}
+
+.navbtn:hover:before {
+  transition: 0.5s;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
 }
