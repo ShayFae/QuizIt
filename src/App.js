@@ -4,6 +4,7 @@ import List from './components/List';
 import Login from './components/Login';
 import Register from './components/Register';
 import Create from './components/Create';
+import Profile from './components/Profile';
 import { useState } from 'react';
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
         <button className='navbtn' onClick={() => setNav('login')}>Login</button>
         <button className='navbtn' onClick={() => setNav('register')}>Register</button>
         <button className='navbtn' onClick={() => setNav('create')}>Create</button>
+        <button className='navbtn' onClick={() => setNav('profile')}>Profile</button>
+
 
       </nav>
       <section className='app-section'>
@@ -26,6 +29,7 @@ function App() {
         {nav === 'login' && <Login />}
         {nav === 'register' && <Register />}
         {nav === 'create' && <Create />}
+        {nav === 'profile' && <Profile />}
       </section>
     </div>
   );

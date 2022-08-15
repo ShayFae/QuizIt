@@ -49,6 +49,10 @@ body {
   background-color: aliceblue;
 }
 
+.navbtn:focus {
+  background-color: aliceblue;
+}
+
 .navbtn:hover:before {
   transition: 0.5s;
   left: 0;
