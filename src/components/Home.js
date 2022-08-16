@@ -14,7 +14,7 @@ export default function Home() {
           <button className='carousel' onClick={() => setCarousel('three')}></button>
           <button className='carousel' onClick={() => setCarousel('four')}></button>
           <button className='carousel' onClick={() => setCarousel('five')}></button>
-          </section>
+        </section>
         
         <section className='home'>
           {carousel === 'one' &&  <article><img className='carousel-img' src='https://www.verywellfamily.com/thmb/L0mE1NUZdJr2kRoyCmfLAXtqxic=/500x350/filters:no_upscale():max_bytes(150000):strip_icc()/iStock-607040647-5a318cfcb39d030037c8ef1a.jpg' alt='' /></article>}
